@@ -1,25 +1,8 @@
-package main
+package sort
 
 import (
-	"fmt"
 	"math"
-	"math/rand"
-	"time"
 )
-
-func main() {
-	sample := []int{}
-	for i := 0; i < 20; i++ {
-		sample = append(sample, i)
-	}
-	rand.Seed(time.Now().UnixNano())
-	rand.Shuffle(len(sample), func(i, j int) { sample[i], sample[j] = sample[j], sample[i] })
-	fmt.Println(sample)
-
-	ans := MergeSort(sample)
-
-	fmt.Println(ans)
-}
 
 func MergeSort(arr []int) []int {
 	length := len(arr)
