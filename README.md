@@ -1,2 +1,2 @@
 # WCED
-Write Code Every Day
+Write Code Every Dayにチャレンジしてみるためのリポジトリ
